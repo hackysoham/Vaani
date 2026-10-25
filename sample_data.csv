@@ -1,0 +1,351 @@
+order_id,date,city,state,category,sub_category,customer_segment,payment_method,quantity,unit_price,discount_pct,revenue,profit,rating,delivery_days
+IND-2024-1036,2024-01-01,Jaipur,Rajasthan,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,UPI (PhonePe/GPay),3,740.0,0.25,1665.0,454.1,4.7,3
+IND-2024-1003,2024-01-04,Delhi,Delhi,Home & Kitchen,Smart LED Ceiling Lights,Corporate,UPI (PhonePe/GPay),1,1770.0,0.1,1593.0,336.7,4.7,4
+IND-2024-1161,2024-01-05,Bengaluru,Karnataka,Home & Kitchen,Air Fryer 4.5L,Corporate,UPI (PhonePe/GPay),3,7090.0,0.15,18079.5,3296.95,5.0,2
+IND-2024-1246,2024-01-05,Surat,Gujarat,Apparel,Festive Nehru Jacket,Corporate,No-Cost EMI,1,2810.0,0.25,2107.5,490.64,4.9,4
+IND-2024-1231,2024-01-05,Ahmedabad,Gujarat,Apparel,Cotton Kurta Set,Corporate,Cash on Delivery,8,2580.0,0.2,16512.0,4835.67,4.8,3
+IND-2024-1011,2024-01-06,Lucknow,Uttar Pradesh,Electronics,Noise-Cancelling Earbuds,Corporate,UPI (PhonePe/GPay),1,3800.0,0.1,3420.0,838.27,4.5,6
+IND-2024-1062,2024-01-07,Surat,Gujarat,Grocery,Dry Fruits & Almonds 1kg,Corporate,UPI (PhonePe/GPay),1,1230.0,0.0,1230.0,170.8,4.0,2
+IND-2024-1058,2024-01-09,Bengaluru,Karnataka,Grocery,Organic Cold-Pressed Oils,Corporate,No-Cost EMI,1,640.0,0.25,480.0,68.84,5.0,2
+IND-2024-1115,2024-01-11,Chennai,Tamil Nadu,Apparel,Festive Nehru Jacket,B2C Consumer,Credit Card,5,4060.0,0.0,20300.0,5177.79,4.8,3
+IND-2024-1343,2024-01-13,Kolkata,West Bengal,Apparel,Kanchipuram Silk Saree,Small Business (MSME),Credit Card,1,10870.0,0.05,10326.5,3547.34,3.8,3
+IND-2024-1300,2024-01-15,Delhi,Delhi,Apparel,Cotton Kurta Set,Small Business (MSME),Credit Card,1,2620.0,0.15,2227.0,539.48,4.5,2
+IND-2024-1155,2024-01-15,Bengaluru,Karnataka,Electronics,Noise-Cancelling Earbuds,B2C Consumer,Cash on Delivery,3,3450.0,0.15,8797.5,2277.3,5.0,2
+IND-2024-1047,2024-01-15,Kolkata,West Bengal,Grocery,Dry Fruits & Almonds 1kg,B2C Consumer,Cash on Delivery,4,1430.0,0.05,5434.0,932.65,3.8,1
+IND-2024-1274,2024-01-16,Pune,Maharashtra,Electronics,Laptops & Tablets,B2C Consumer,Credit Card,3,56000.0,0.05,159600.0,16406.47,4.4,2
+IND-2024-1109,2024-01-16,Bengaluru,Karnataka,Beauty & Personal Care,Ayurvedic Hair Care Kit,Small Business (MSME),No-Cost EMI,2,1150.0,0.05,2185.0,671.94,4.0,5
+IND-2024-1285,2024-01-18,Pune,Maharashtra,Electronics,Noise-Cancelling Earbuds,Corporate,Credit Card,1,2280.0,0.1,2052.0,462.23,4.0,3
+IND-2024-1079,2024-01-19,Delhi,Delhi,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,UPI (PhonePe/GPay),1,530.0,0.15,450.5,118.92,4.2,2
+IND-2024-1114,2024-01-22,Kolkata,West Bengal,Electronics,Laptops & Tablets,Corporate,Cash on Delivery,4,69320.0,0.2,221824.0,19540.63,4.5,1
+IND-2024-1207,2024-01-22,Hyderabad,Telangana,Apparel,Festive Nehru Jacket,B2C Consumer,Credit Card,5,2600.0,0.25,9750.0,2858.66,4.7,1
+IND-2024-1319,2024-01-25,Lucknow,Uttar Pradesh,Electronics,Smartphones (5G),Small Business (MSME),Cash on Delivery,1,19630.0,0.15,16685.5,1930.33,4.2,2
+IND-2024-1010,2024-01-25,Bengaluru,Karnataka,Apparel,Cotton Kurta Set,Corporate,No-Cost EMI,1,2550.0,0.0,2550.0,689.32,4.5,6
+IND-2024-1106,2024-01-27,Pune,Maharashtra,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Corporate,Credit Card,2,780.0,0.05,1482.0,464.97,4.0,2
+IND-2024-1334,2024-01-28,Hyderabad,Telangana,Home & Kitchen,Smart LED Ceiling Lights,Small Business (MSME),Cash on Delivery,2,2250.0,0.15,3825.0,977.67,4.0,1
+IND-2024-1275,2024-01-29,Hyderabad,Telangana,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),Net Banking,4,780.0,0.05,2964.0,936.6,3.8,3
+IND-2024-1144,2024-01-30,Bengaluru,Karnataka,Home & Kitchen,Smart LED Ceiling Lights,Prime Member,No-Cost EMI,3,2170.0,0.05,6184.5,1685.9,4.9,1
+IND-2024-1022,2024-01-30,Surat,Gujarat,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,UPI (PhonePe/GPay),1,1600.0,0.2,1280.0,406.75,5.0,1
+IND-2024-1021,2024-01-31,Delhi,Delhi,Home & Kitchen,Tri-ply Stainless Steel Cookware,Corporate,Credit Card,1,5750.0,0.15,4887.5,960.25,4.4,2
+IND-2024-1327,2024-01-31,Delhi,Delhi,Electronics,Laptops & Tablets,Prime Member,No-Cost EMI,2,68980.0,0.2,110368.0,10464.72,4.8,4
+IND-2024-1264,2024-02-01,Kolkata,West Bengal,Apparel,Cotton Kurta Set,Small Business (MSME),Net Banking,4,1690.0,0.15,5746.0,1705.76,4.9,2
+IND-2024-1256,2024-02-02,Pune,Maharashtra,Beauty & Personal Care,Herbal Face Scrub & Mask,Prime Member,Net Banking,2,390.0,0.1,702.0,182.51,4.2,2
+IND-2024-1251,2024-02-04,Mumbai,Maharashtra,Grocery,Organic Cold-Pressed Oils,Corporate,Cash on Delivery,1,470.0,0.15,399.5,56.04,4.8,1
+IND-2024-1145,2024-02-04,Hyderabad,Telangana,Grocery,Darjeeling Premium Tea,Corporate,Net Banking,2,540.0,0.2,864.0,139.35,4.7,2
+IND-2024-1190,2024-02-04,Bengaluru,Karnataka,Beauty & Personal Care,Ayurvedic Hair Care Kit,B2C Consumer,Cash on Delivery,2,1230.0,0.0,2460.0,726.92,4.9,2
+IND-2024-1294,2024-02-04,Bengaluru,Karnataka,Home & Kitchen,Bedsheet & Quilt Combo,B2C Consumer,No-Cost EMI,4,2770.0,0.2,8864.0,2363.24,5.0,4
+IND-2024-1005,2024-02-05,Mumbai,Maharashtra,Apparel,Denim Jeans,Corporate,Net Banking,4,3270.0,0.0,13080.0,2521.92,4.2,2
+IND-2024-1250,2024-02-06,Jaipur,Rajasthan,Electronics,Noise-Cancelling Earbuds,Prime Member,Cash on Delivery,1,4300.0,0.2,3440.0,839.58,4.0,1
+IND-2024-1041,2024-02-07,Ahmedabad,Gujarat,Home & Kitchen,Air Fryer 4.5L,B2C Consumer,UPI (PhonePe/GPay),1,6510.0,0.15,5533.5,970.62,4.8,2
+IND-2024-1148,2024-02-07,Ahmedabad,Gujarat,Apparel,Festive Nehru Jacket,B2C Consumer,No-Cost EMI,3,4490.0,0.1,12123.0,3310.69,5.0,2
+IND-2024-1211,2024-02-07,Bengaluru,Karnataka,Grocery,Organic Cold-Pressed Oils,Small Business (MSME),Net Banking,3,630.0,0.05,1795.5,269.44,4.0,1
+IND-2024-1063,2024-02-07,Surat,Gujarat,Electronics,Smartwatches,Prime Member,UPI (PhonePe/GPay),2,3170.0,0.1,5706.0,1099.1,5.0,4
+IND-2024-1265,2024-02-08,Hyderabad,Telangana,Apparel,Kanchipuram Silk Saree,B2C Consumer,No-Cost EMI,1,5980.0,0.15,5083.0,1439.83,4.7,6
+IND-2024-1282,2024-02-09,Hyderabad,Telangana,Grocery,Darjeeling Premium Tea,Small Business (MSME),Cash on Delivery,4,430.0,0.0,1720.0,339.48,3.8,2
+IND-2024-1146,2024-02-09,Surat,Gujarat,Apparel,Denim Jeans,B2C Consumer,Credit Card,2,2220.0,0.05,4218.0,960.15,4.9,3
+IND-2024-1244,2024-02-09,Delhi,Delhi,Beauty & Personal Care,Ayurvedic Hair Care Kit,B2C Consumer,Cash on Delivery,1,1320.0,0.0,1320.0,447.19,4.2,2
+IND-2024-1133,2024-02-10,Mumbai,Maharashtra,Grocery,Organic Cold-Pressed Oils,Corporate,UPI (PhonePe/GPay),2,840.0,0.25,1260.0,182.16,4.5,2
+IND-2024-1069,2024-02-11,Surat,Gujarat,Electronics,Laptops & Tablets,B2C Consumer,Net Banking,2,62970.0,0.0,125940.0,9944.96,3.8,4
+IND-2024-1142,2024-02-12,Chandigarh,Punjab,Home & Kitchen,Tri-ply Stainless Steel Cookware,Small Business (MSME),UPI (PhonePe/GPay),10,3750.0,0.05,35625.0,7583.31,4.0,2
+IND-2024-1221,2024-02-13,Bengaluru,Karnataka,Apparel,Denim Jeans,Corporate,Net Banking,2,1800.0,0.2,2880.0,659.57,4.8,1
+IND-2024-1247,2024-02-14,Bengaluru,Karnataka,Apparel,Kanchipuram Silk Saree,Prime Member,Credit Card,1,10100.0,0.15,8585.0,2432.18,4.5,3
+IND-2024-1235,2024-02-14,Ahmedabad,Gujarat,Electronics,Smartwatches,Corporate,Credit Card,3,3440.0,0.25,7740.0,1626.5,4.2,4
+IND-2024-1323,2024-02-15,Bengaluru,Karnataka,Beauty & Personal Care,Herbal Face Scrub & Mask,B2C Consumer,Net Banking,5,620.0,0.2,2480.0,649.15,4.4,2
+IND-2024-1160,2024-02-16,Kolkata,West Bengal,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),Cash on Delivery,1,1270.0,0.1,1143.0,345.88,4.9,2
+IND-2024-1089,2024-02-16,Pune,Maharashtra,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),No-Cost EMI,1,990.0,0.2,792.0,132.22,5.0,5
+IND-2024-1002,2024-02-17,Hyderabad,Telangana,Apparel,Kanchipuram Silk Saree,Prime Member,Cash on Delivery,3,9830.0,0.25,22117.5,6724.71,4.5,4
+IND-2024-1286,2024-02-17,Chennai,Tamil Nadu,Beauty & Personal Care,Herbal Face Scrub & Mask,Prime Member,No-Cost EMI,3,840.0,0.15,2142.0,727.89,4.8,2
+IND-2024-1325,2024-02-18,Mumbai,Maharashtra,Electronics,Smartwatches,Small Business (MSME),UPI (PhonePe/GPay),1,5480.0,0.1,4932.0,1213.46,4.7,4
+IND-2024-1132,2024-02-20,Chandigarh,Punjab,Grocery,Organic Cold-Pressed Oils,Prime Member,Cash on Delivery,1,510.0,0.15,433.5,64.26,4.9,3
+IND-2024-1222,2024-02-20,Pune,Maharashtra,Apparel,Cotton Kurta Set,Prime Member,Net Banking,1,1960.0,0.25,1470.0,422.54,3.8,2
+IND-2024-1065,2024-02-20,Hyderabad,Telangana,Apparel,Denim Jeans,Prime Member,UPI (PhonePe/GPay),1,2690.0,0.05,2555.5,519.07,4.8,2
+IND-2024-1287,2024-02-21,Chennai,Tamil Nadu,Apparel,Cotton Kurta Set,Small Business (MSME),Net Banking,2,1890.0,0.25,2835.0,803.36,4.4,1
+IND-2024-1257,2024-02-22,Surat,Gujarat,Electronics,Smartwatches,Corporate,Net Banking,1,5830.0,0.0,5830.0,1184.31,4.8,5
+IND-2024-1086,2024-02-24,Hyderabad,Telangana,Home & Kitchen,Smart LED Ceiling Lights,Corporate,Net Banking,10,2280.0,0.1,20520.0,4218.49,3.8,3
+IND-2024-1054,2024-02-24,Kolkata,West Bengal,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),No-Cost EMI,1,1420.0,0.25,1065.0,160.79,5.0,4
+IND-2024-1019,2024-02-25,Hyderabad,Telangana,Apparel,Cotton Kurta Set,Prime Member,UPI (PhonePe/GPay),1,2110.0,0.05,2004.5,523.97,4.9,4
+IND-2024-1295,2024-02-27,Kolkata,West Bengal,Apparel,Cotton Kurta Set,B2C Consumer,Net Banking,2,2160.0,0.0,4320.0,1363.8,5.0,5
+IND-2024-1103,2024-02-28,Lucknow,Uttar Pradesh,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,Cash on Delivery,1,830.0,0.05,788.5,230.43,4.8,3
+IND-2024-1075,2024-03-01,Lucknow,Uttar Pradesh,Apparel,Festive Nehru Jacket,Corporate,Cash on Delivery,1,4320.0,0.25,3240.0,785.14,4.4,2
+IND-2024-1259,2024-03-02,Jaipur,Rajasthan,Electronics,Smartwatches,B2C Consumer,Cash on Delivery,2,3500.0,0.0,7000.0,1749.78,4.5,4
+IND-2024-1347,2024-03-02,Kolkata,West Bengal,Electronics,Laptops & Tablets,Small Business (MSME),UPI (PhonePe/GPay),1,47490.0,0.05,45115.5,4162.7,4.7,2
+IND-2024-1134,2024-03-03,Mumbai,Maharashtra,Apparel,Festive Nehru Jacket,Corporate,No-Cost EMI,2,3560.0,0.0,7120.0,1635.09,5.0,1
+IND-2024-1029,2024-03-07,Lucknow,Uttar Pradesh,Grocery,Organic Cold-Pressed Oils,B2C Consumer,UPI (PhonePe/GPay),2,800.0,0.15,1360.0,193.88,4.2,3
+IND-2024-1152,2024-03-07,Kolkata,West Bengal,Beauty & Personal Care,Ayurvedic Hair Care Kit,Small Business (MSME),Credit Card,2,1700.0,0.1,3060.0,880.69,4.7,5
+IND-2024-1182,2024-03-09,Ahmedabad,Gujarat,Apparel,Festive Nehru Jacket,Corporate,No-Cost EMI,2,3840.0,0.15,6528.0,1800.1,4.4,4
+IND-2024-1216,2024-03-10,Pune,Maharashtra,Electronics,Laptops & Tablets,Corporate,No-Cost EMI,2,49300.0,0.1,88740.0,7843.38,4.2,2
+IND-2024-1094,2024-03-10,Kolkata,West Bengal,Home & Kitchen,Smart LED Ceiling Lights,Prime Member,Cash on Delivery,3,2440.0,0.2,5856.0,1371.34,4.0,4
+IND-2024-1209,2024-03-12,Chandigarh,Punjab,Electronics,Noise-Cancelling Earbuds,Corporate,Net Banking,1,1660.0,0.0,1660.0,395.15,3.8,3
+IND-2024-1194,2024-03-14,Ahmedabad,Gujarat,Electronics,Laptops & Tablets,Small Business (MSME),Credit Card,2,70900.0,0.05,134710.0,11718.06,4.7,3
+IND-2024-1076,2024-03-15,Kolkata,West Bengal,Apparel,Cotton Kurta Set,Small Business (MSME),UPI (PhonePe/GPay),1,2670.0,0.15,2269.5,604.93,4.5,3
+IND-2024-1083,2024-03-15,Hyderabad,Telangana,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Corporate,No-Cost EMI,3,950.0,0.05,2707.5,855.25,4.4,2
+IND-2024-1312,2024-03-18,Delhi,Delhi,Apparel,Denim Jeans,Prime Member,UPI (PhonePe/GPay),2,2240.0,0.15,3808.0,680.08,4.9,2
+IND-2024-1127,2024-03-19,Delhi,Delhi,Apparel,Cotton Kurta Set,Prime Member,Cash on Delivery,1,2430.0,0.1,2187.0,644.76,4.5,4
+IND-2024-1126,2024-03-20,Bengaluru,Karnataka,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Net Banking,2,1200.0,0.25,1800.0,200.72,4.2,3
+IND-2024-1110,2024-03-20,Delhi,Delhi,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Cash on Delivery,1,1510.0,0.25,1132.5,354.14,4.5,2
+IND-2024-1348,2024-03-20,Mumbai,Maharashtra,Apparel,Denim Jeans,Small Business (MSME),Cash on Delivery,3,2570.0,0.25,5782.5,1196.61,5.0,2
+IND-2024-1159,2024-03-22,Chennai,Tamil Nadu,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,Cash on Delivery,3,520.0,0.15,1326.0,456.99,4.5,2
+IND-2024-1181,2024-03-22,Kolkata,West Bengal,Beauty & Personal Care,Herbal Face Scrub & Mask,Small Business (MSME),Net Banking,2,770.0,0.25,1155.0,389.76,4.4,2
+IND-2024-1302,2024-03-24,Pune,Maharashtra,Electronics,Noise-Cancelling Earbuds,Prime Member,Credit Card,1,1580.0,0.2,1264.0,342.53,4.4,3
+IND-2024-1331,2024-03-25,Bengaluru,Karnataka,Home & Kitchen,Smart LED Ceiling Lights,Corporate,Cash on Delivery,8,1710.0,0.0,13680.0,3290.03,4.4,1
+IND-2024-1090,2024-03-25,Pune,Maharashtra,Home & Kitchen,Smart LED Ceiling Lights,B2C Consumer,Credit Card,1,2570.0,0.0,2570.0,610.94,4.4,4
+IND-2024-1051,2024-03-26,Surat,Gujarat,Beauty & Personal Care,Herbal Face Scrub & Mask,B2C Consumer,No-Cost EMI,3,740.0,0.05,2109.0,720.91,3.8,5
+IND-2024-1293,2024-03-26,Hyderabad,Telangana,Apparel,Cotton Kurta Set,Prime Member,No-Cost EMI,1,1270.0,0.25,952.5,261.53,4.5,2
+IND-2024-1289,2024-03-28,Lucknow,Uttar Pradesh,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),UPI (PhonePe/GPay),1,1190.0,0.15,1011.5,100.27,5.0,2
+IND-2024-1309,2024-03-28,Lucknow,Uttar Pradesh,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,Net Banking,2,1050.0,0.25,1575.0,467.51,4.0,2
+IND-2024-1339,2024-03-29,Chandigarh,Punjab,Apparel,Kanchipuram Silk Saree,Corporate,Cash on Delivery,2,8180.0,0.1,14724.0,4422.65,4.4,2
+IND-2024-1070,2024-03-30,Ahmedabad,Gujarat,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,UPI (PhonePe/GPay),1,590.0,0.2,472.0,138.88,4.9,2
+IND-2024-1313,2024-03-31,Chennai,Tamil Nadu,Electronics,Smartphones (5G),Prime Member,Cash on Delivery,1,24880.0,0.05,23636.0,2901.23,4.0,1
+IND-2024-1176,2024-03-31,Mumbai,Maharashtra,Home & Kitchen,Bedsheet & Quilt Combo,B2C Consumer,Net Banking,3,1930.0,0.1,5211.0,1565.99,4.0,5
+IND-2024-1012,2024-04-01,Jaipur,Rajasthan,Electronics,Noise-Cancelling Earbuds,Prime Member,No-Cost EMI,2,4020.0,0.05,7638.0,1710.63,5.0,5
+IND-2024-1258,2024-04-01,Mumbai,Maharashtra,Beauty & Personal Care,Herbal Face Scrub & Mask,Small Business (MSME),Net Banking,1,760.0,0.1,684.0,189.7,4.0,3
+IND-2024-1187,2024-04-02,Delhi,Delhi,Home & Kitchen,Smart LED Ceiling Lights,Prime Member,Net Banking,1,2990.0,0.15,2541.5,587.2,4.0,2
+IND-2024-1326,2024-04-03,Bengaluru,Karnataka,Home & Kitchen,Bedsheet & Quilt Combo,Corporate,Cash on Delivery,1,3710.0,0.15,3153.5,899.95,4.2,1
+IND-2024-1023,2024-04-05,Bengaluru,Karnataka,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,No-Cost EMI,1,1510.0,0.0,1510.0,547.21,3.8,3
+IND-2024-1073,2024-04-06,Jaipur,Rajasthan,Grocery,Dry Fruits & Almonds 1kg,Prime Member,Net Banking,3,1350.0,0.05,3847.5,536.79,4.9,5
+IND-2024-1249,2024-04-06,Chandigarh,Punjab,Home & Kitchen,Smart LED Ceiling Lights,B2C Consumer,Credit Card,3,2400.0,0.05,6840.0,1639.08,4.9,3
+IND-2024-1337,2024-04-07,Chandigarh,Punjab,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Cash on Delivery,1,1330.0,0.25,997.5,109.85,4.9,3
+IND-2024-1018,2024-04-07,Bengaluru,Karnataka,Electronics,Laptops & Tablets,B2C Consumer,UPI (PhonePe/GPay),1,50050.0,0.25,37537.5,2926.52,4.8,3
+IND-2024-1050,2024-04-12,Mumbai,Maharashtra,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,Cash on Delivery,2,990.0,0.0,1980.0,645.76,4.5,4
+IND-2024-1028,2024-04-14,Lucknow,Uttar Pradesh,Grocery,Dry Fruits & Almonds 1kg,Corporate,Net Banking,5,1050.0,0.0,5250.0,691.18,3.8,1
+IND-2024-1236,2024-04-15,Mumbai,Maharashtra,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),Net Banking,2,920.0,0.05,1748.0,579.43,4.5,6
+IND-2024-1208,2024-04-16,Surat,Gujarat,Apparel,Festive Nehru Jacket,Corporate,No-Cost EMI,1,4320.0,0.2,3456.0,828.6,4.7,2
+IND-2024-1266,2024-04-16,Ahmedabad,Gujarat,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),No-Cost EMI,1,1060.0,0.05,1007.0,164.99,3.8,2
+IND-2024-1196,2024-04-16,Chennai,Tamil Nadu,Grocery,Royal Basmati Rice 10kg,Corporate,Credit Card,1,1060.0,0.25,795.0,70.37,4.4,2
+IND-2024-1006,2024-04-17,Lucknow,Uttar Pradesh,Grocery,Royal Basmati Rice 10kg,Corporate,Cash on Delivery,1,1250.0,0.25,937.5,86.57,4.5,7
+IND-2024-1299,2024-04-18,Kolkata,West Bengal,Home & Kitchen,Smart LED Ceiling Lights,Corporate,Credit Card,2,2690.0,0.05,5111.0,1066.79,5.0,5
+IND-2024-1008,2024-04-18,Surat,Gujarat,Grocery,Organic Cold-Pressed Oils,Small Business (MSME),Credit Card,1,760.0,0.25,570.0,78.81,4.4,3
+IND-2024-1350,2024-04-19,Lucknow,Uttar Pradesh,Grocery,Darjeeling Premium Tea,B2C Consumer,UPI (PhonePe/GPay),1,530.0,0.2,424.0,77.02,4.7,2
+IND-2024-1191,2024-04-21,Mumbai,Maharashtra,Apparel,Denim Jeans,Small Business (MSME),Credit Card,5,1920.0,0.2,7680.0,1452.55,4.5,5
+IND-2024-1131,2024-04-23,Ahmedabad,Gujarat,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Net Banking,1,1160.0,0.1,1044.0,96.12,4.4,1
+IND-2024-1310,2024-04-24,Chandigarh,Punjab,Grocery,Dry Fruits & Almonds 1kg,Corporate,UPI (PhonePe/GPay),1,1480.0,0.1,1332.0,204.93,4.9,1
+IND-2024-1245,2024-04-27,Kolkata,West Bengal,Electronics,Smartphones (5G),Prime Member,Credit Card,1,20340.0,0.1,18306.0,1957.58,4.0,3
+IND-2024-1263,2024-04-28,Jaipur,Rajasthan,Home & Kitchen,Smart LED Ceiling Lights,Prime Member,Cash on Delivery,3,2080.0,0.2,4992.0,1052.72,4.0,3
+IND-2024-1277,2024-04-29,Surat,Gujarat,Apparel,Kanchipuram Silk Saree,Prime Member,Net Banking,1,9500.0,0.2,7600.0,2075.8,4.2,5
+IND-2024-1099,2024-05-01,Surat,Gujarat,Grocery,Royal Basmati Rice 10kg,B2C Consumer,UPI (PhonePe/GPay),1,1040.0,0.25,780.0,76.15,4.9,2
+IND-2024-1197,2024-05-02,Jaipur,Rajasthan,Grocery,Darjeeling Premium Tea,Small Business (MSME),No-Cost EMI,2,540.0,0.1,972.0,164.9,4.9,2
+IND-2024-1078,2024-05-02,Surat,Gujarat,Home & Kitchen,Air Fryer 4.5L,Corporate,Cash on Delivery,1,7000.0,0.1,6300.0,1284.87,4.2,2
+IND-2024-1158,2024-05-03,Ahmedabad,Gujarat,Electronics,Noise-Cancelling Earbuds,Corporate,No-Cost EMI,1,2850.0,0.0,2850.0,667.66,4.8,2
+IND-2024-1225,2024-05-04,Jaipur,Rajasthan,Apparel,Cotton Kurta Set,Corporate,Credit Card,1,1760.0,0.15,1496.0,385.18,4.2,3
+IND-2024-1214,2024-05-04,Surat,Gujarat,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Credit Card,1,1520.0,0.1,1368.0,411.64,4.0,2
+IND-2024-1170,2024-05-06,Pune,Maharashtra,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Prime Member,Cash on Delivery,8,680.0,0.1,4896.0,1853.01,4.7,2
+IND-2024-1248,2024-05-07,Jaipur,Rajasthan,Beauty & Personal Care,Herbal Face Scrub & Mask,Small Business (MSME),Credit Card,1,750.0,0.25,562.5,144.8,5.0,3
+IND-2024-1283,2024-05-07,Chandigarh,Punjab,Electronics,Noise-Cancelling Earbuds,Corporate,Cash on Delivery,1,2270.0,0.0,2270.0,490.57,4.2,5
+IND-2024-1137,2024-05-09,Chandigarh,Punjab,Electronics,Noise-Cancelling Earbuds,B2C Consumer,No-Cost EMI,1,3860.0,0.25,2895.0,757.86,4.7,1
+IND-2024-1255,2024-05-12,Delhi,Delhi,Grocery,Organic Cold-Pressed Oils,B2C Consumer,Net Banking,4,800.0,0.25,2400.0,374.95,4.8,2
+IND-2024-1026,2024-05-15,Delhi,Delhi,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),No-Cost EMI,1,1390.0,0.05,1320.5,129.6,5.0,1
+IND-2024-1303,2024-05-17,Lucknow,Uttar Pradesh,Home & Kitchen,Tri-ply Stainless Steel Cookware,Prime Member,Credit Card,8,5310.0,0.25,31860.0,5704.87,3.8,2
+IND-2024-1173,2024-05-19,Delhi,Delhi,Electronics,Smartwatches,Prime Member,UPI (PhonePe/GPay),2,3590.0,0.2,5744.0,1159.68,4.0,2
+IND-2024-1108,2024-05-19,Chandigarh,Punjab,Grocery,Darjeeling Premium Tea,Corporate,UPI (PhonePe/GPay),1,530.0,0.05,503.5,92.43,4.2,3
+IND-2024-1102,2024-05-20,Surat,Gujarat,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,No-Cost EMI,1,740.0,0.2,592.0,179.23,4.8,1
+IND-2024-1057,2024-05-21,Jaipur,Rajasthan,Electronics,Smartwatches,Prime Member,Cash on Delivery,3,2880.0,0.15,7344.0,1642.42,4.9,2
+IND-2024-1215,2024-05-21,Kolkata,West Bengal,Grocery,Dry Fruits & Almonds 1kg,Corporate,No-Cost EMI,1,1480.0,0.05,1406.0,224.88,4.4,2
+IND-2024-1239,2024-05-22,Chandigarh,Punjab,Grocery,Dry Fruits & Almonds 1kg,B2C Consumer,Cash on Delivery,1,1610.0,0.0,1610.0,268.23,4.7,4
+IND-2024-1218,2024-05-23,Kolkata,West Bengal,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Cash on Delivery,1,1420.0,0.2,1136.0,102.69,4.4,2
+IND-2024-1129,2024-05-24,Kolkata,West Bengal,Beauty & Personal Care,Herbal Face Scrub & Mask,Prime Member,Net Banking,1,580.0,0.05,551.0,180.24,3.8,3
+IND-2024-1044,2024-05-26,Hyderabad,Telangana,Grocery,Darjeeling Premium Tea,Corporate,Credit Card,2,510.0,0.05,969.0,156.15,4.4,1
+IND-2024-1172,2024-05-27,Chandigarh,Punjab,Electronics,Noise-Cancelling Earbuds,Prime Member,No-Cost EMI,2,4270.0,0.25,6405.0,1591.2,4.5,5
+IND-2024-1345,2024-05-27,Chandigarh,Punjab,Electronics,Laptops & Tablets,B2C Consumer,UPI (PhonePe/GPay),8,51180.0,0.25,307080.0,26083.88,4.5,2
+IND-2024-1175,2024-05-27,Chennai,Tamil Nadu,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Credit Card,1,1400.0,0.2,1120.0,103.0,4.8,5
+IND-2024-1219,2024-05-29,Chandigarh,Punjab,Electronics,Laptops & Tablets,Prime Member,Cash on Delivery,1,60880.0,0.1,54792.0,4549.63,4.8,1
+IND-2024-1143,2024-05-31,Pune,Maharashtra,Home & Kitchen,Bedsheet & Quilt Combo,Small Business (MSME),No-Cost EMI,1,1880.0,0.15,1598.0,372.22,4.8,2
+IND-2024-1344,2024-05-31,Hyderabad,Telangana,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,No-Cost EMI,2,1130.0,0.2,1808.0,642.44,4.8,2
+IND-2024-1324,2024-05-31,Pune,Maharashtra,Home & Kitchen,Tri-ply Stainless Steel Cookware,Small Business (MSME),Net Banking,1,2560.0,0.0,2560.0,594.41,4.8,3
+IND-2024-1223,2024-05-31,Kolkata,West Bengal,Electronics,Smartphones (5G),Corporate,Credit Card,3,29810.0,0.1,80487.0,9113.39,5.0,2
+IND-2024-1149,2024-06-02,Delhi,Delhi,Apparel,Denim Jeans,Prime Member,Cash on Delivery,1,2410.0,0.05,2289.5,498.02,3.8,2
+IND-2024-1093,2024-06-03,Lucknow,Uttar Pradesh,Home & Kitchen,Tri-ply Stainless Steel Cookware,B2C Consumer,UPI (PhonePe/GPay),5,2700.0,0.1,12150.0,2931.11,4.4,5
+IND-2024-1156,2024-06-03,Ahmedabad,Gujarat,Apparel,Festive Nehru Jacket,Corporate,Cash on Delivery,1,2670.0,0.0,2670.0,622.99,4.9,2
+IND-2024-1068,2024-06-06,Surat,Gujarat,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),No-Cost EMI,2,850.0,0.1,1530.0,567.59,5.0,2
+IND-2024-1212,2024-06-06,Ahmedabad,Gujarat,Grocery,Darjeeling Premium Tea,Corporate,UPI (PhonePe/GPay),1,400.0,0.15,340.0,60.26,3.8,1
+IND-2024-1124,2024-06-07,Lucknow,Uttar Pradesh,Home & Kitchen,Air Fryer 4.5L,Small Business (MSME),Credit Card,5,6080.0,0.1,27360.0,5290.29,5.0,1
+IND-2024-1260,2024-06-08,Chennai,Tamil Nadu,Electronics,Laptops & Tablets,Prime Member,Cash on Delivery,1,38270.0,0.2,30616.0,2990.62,4.7,3
+IND-2024-1229,2024-06-09,Bengaluru,Karnataka,Apparel,Denim Jeans,Corporate,No-Cost EMI,1,1710.0,0.05,1624.5,325.96,4.2,3
+IND-2024-1104,2024-06-09,Kolkata,West Bengal,Grocery,Darjeeling Premium Tea,B2C Consumer,UPI (PhonePe/GPay),1,540.0,0.15,459.0,71.89,4.8,1
+IND-2024-1072,2024-06-10,Pune,Maharashtra,Grocery,Royal Basmati Rice 10kg,B2C Consumer,No-Cost EMI,1,1440.0,0.2,1152.0,126.43,4.9,2
+IND-2024-1349,2024-06-11,Jaipur,Rajasthan,Apparel,Cotton Kurta Set,Corporate,UPI (PhonePe/GPay),3,2080.0,0.05,5928.0,1617.98,4.7,2
+IND-2024-1081,2024-06-11,Lucknow,Uttar Pradesh,Home & Kitchen,Tri-ply Stainless Steel Cookware,Prime Member,UPI (PhonePe/GPay),1,4420.0,0.25,3315.0,784.06,4.8,6
+IND-2024-1238,2024-06-13,Hyderabad,Telangana,Home & Kitchen,Bedsheet & Quilt Combo,Corporate,UPI (PhonePe/GPay),2,1830.0,0.25,2745.0,722.08,4.0,2
+IND-2024-1278,2024-06-14,Mumbai,Maharashtra,Electronics,Smartwatches,Small Business (MSME),UPI (PhonePe/GPay),5,5140.0,0.0,25700.0,6241.7,4.7,3
+IND-2024-1342,2024-06-14,Chandigarh,Punjab,Electronics,Noise-Cancelling Earbuds,Small Business (MSME),Cash on Delivery,2,3190.0,0.25,4785.0,1271.66,3.8,3
+IND-2024-1169,2024-06-15,Lucknow,Uttar Pradesh,Home & Kitchen,Bedsheet & Quilt Combo,Small Business (MSME),Net Banking,1,2220.0,0.2,1776.0,456.84,4.9,2
+IND-2024-1267,2024-06-16,Delhi,Delhi,Electronics,Smartwatches,Small Business (MSME),Credit Card,1,6860.0,0.0,6860.0,1589.42,3.8,6
+IND-2024-1184,2024-06-16,Jaipur,Rajasthan,Home & Kitchen,Tri-ply Stainless Steel Cookware,Corporate,UPI (PhonePe/GPay),3,4650.0,0.15,11857.5,2184.5,4.9,1
+IND-2024-1297,2024-06-18,Chandigarh,Punjab,Apparel,Kanchipuram Silk Saree,Small Business (MSME),Net Banking,5,11580.0,0.1,52110.0,13382.94,4.5,4
+IND-2024-1270,2024-06-18,Bengaluru,Karnataka,Electronics,Laptops & Tablets,Corporate,Cash on Delivery,5,39720.0,0.15,168810.0,16659.1,3.8,2
+IND-2024-1017,2024-06-18,Bengaluru,Karnataka,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Credit Card,2,1030.0,0.2,1648.0,469.19,4.9,4
+IND-2024-1071,2024-06-19,Chennai,Tamil Nadu,Electronics,Smartwatches,Corporate,No-Cost EMI,2,3980.0,0.1,7164.0,1652.95,3.8,2
+IND-2024-1097,2024-06-19,Hyderabad,Telangana,Apparel,Cotton Kurta Set,Prime Member,Net Banking,3,1320.0,0.05,3762.0,1080.66,4.2,4
+IND-2024-1032,2024-06-19,Kolkata,West Bengal,Apparel,Denim Jeans,Corporate,Credit Card,3,1790.0,0.15,4564.5,1014.83,4.4,4
+IND-2024-1177,2024-06-20,Pune,Maharashtra,Home & Kitchen,Bedsheet & Quilt Combo,Prime Member,UPI (PhonePe/GPay),1,3550.0,0.2,2840.0,759.44,4.7,2
+IND-2024-1306,2024-06-21,Pune,Maharashtra,Grocery,Darjeeling Premium Tea,Prime Member,No-Cost EMI,3,480.0,0.25,1080.0,182.67,4.4,5
+IND-2024-1016,2024-06-22,Mumbai,Maharashtra,Beauty & Personal Care,Herbal Face Scrub & Mask,B2C Consumer,Credit Card,1,480.0,0.0,480.0,152.98,4.0,5
+IND-2024-1163,2024-06-22,Jaipur,Rajasthan,Grocery,Organic Cold-Pressed Oils,B2C Consumer,Credit Card,2,540.0,0.2,864.0,104.28,4.7,4
+IND-2024-1340,2024-06-24,Pune,Maharashtra,Home & Kitchen,Air Fryer 4.5L,Small Business (MSME),No-Cost EMI,2,4480.0,0.25,6720.0,1281.51,4.4,2
+IND-2024-1035,2024-06-25,Chandigarh,Punjab,Grocery,Dry Fruits & Almonds 1kg,Prime Member,Net Banking,2,1330.0,0.15,2261.0,379.8,3.8,3
+IND-2024-1193,2024-06-25,Lucknow,Uttar Pradesh,Home & Kitchen,Smart LED Ceiling Lights,Corporate,Credit Card,1,2480.0,0.1,2232.0,515.83,4.4,2
+IND-2024-1117,2024-06-27,Chennai,Tamil Nadu,Apparel,Cotton Kurta Set,B2C Consumer,Credit Card,1,1370.0,0.05,1301.5,375.61,4.9,2
+IND-2024-1046,2024-06-29,Pune,Maharashtra,Home & Kitchen,Bedsheet & Quilt Combo,Corporate,Credit Card,3,2740.0,0.2,6576.0,1987.42,4.5,2
+IND-2024-1276,2024-06-29,Surat,Gujarat,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,Cash on Delivery,1,1370.0,0.15,1164.5,377.35,3.8,1
+IND-2024-1138,2024-06-29,Jaipur,Rajasthan,Grocery,Organic Cold-Pressed Oils,Prime Member,Credit Card,2,840.0,0.25,1260.0,175.26,4.0,3
+IND-2024-1273,2024-07-02,Ahmedabad,Gujarat,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Prime Member,UPI (PhonePe/GPay),2,770.0,0.1,1386.0,468.86,4.7,3
+IND-2024-1061,2024-07-03,Delhi,Delhi,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),Credit Card,1,1300.0,0.0,1300.0,148.5,4.9,1
+IND-2024-1136,2024-07-03,Bengaluru,Karnataka,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,UPI (PhonePe/GPay),10,630.0,0.2,5040.0,1294.42,4.8,7
+IND-2024-1100,2024-07-04,Jaipur,Rajasthan,Beauty & Personal Care,Ayurvedic Hair Care Kit,Small Business (MSME),Cash on Delivery,1,1240.0,0.2,992.0,273.95,3.8,1
+IND-2024-1122,2024-07-05,Chennai,Tamil Nadu,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),UPI (PhonePe/GPay),1,1180.0,0.2,944.0,122.58,4.7,1
+IND-2024-1141,2024-07-07,Kolkata,West Bengal,Home & Kitchen,Bedsheet & Quilt Combo,Corporate,Net Banking,1,3560.0,0.05,3382.0,912.1,5.0,2
+IND-2024-1290,2024-07-08,Kolkata,West Bengal,Grocery,Organic Cold-Pressed Oils,Small Business (MSME),No-Cost EMI,1,660.0,0.15,561.0,72.97,3.8,2
+IND-2024-1030,2024-07-08,Surat,Gujarat,Beauty & Personal Care,Ayurvedic Hair Care Kit,B2C Consumer,Net Banking,1,1210.0,0.1,1089.0,390.19,4.4,3
+IND-2024-1130,2024-07-09,Jaipur,Rajasthan,Electronics,Smartphones (5G),Prime Member,Cash on Delivery,3,22710.0,0.1,61317.0,7246.17,4.0,5
+IND-2024-1105,2024-07-09,Delhi,Delhi,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Net Banking,2,1400.0,0.1,2520.0,847.53,4.8,4
+IND-2024-1189,2024-07-13,Hyderabad,Telangana,Apparel,Festive Nehru Jacket,B2C Consumer,Cash on Delivery,1,2800.0,0.25,2100.0,589.49,3.8,2
+IND-2024-1038,2024-07-13,Lucknow,Uttar Pradesh,Apparel,Denim Jeans,Corporate,No-Cost EMI,4,2230.0,0.1,8028.0,1502.96,4.7,2
+IND-2024-1288,2024-07-20,Surat,Gujarat,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Corporate,Credit Card,1,620.0,0.15,527.0,161.63,4.0,1
+IND-2024-1305,2024-07-22,Surat,Gujarat,Electronics,Smartphones (5G),Small Business (MSME),Net Banking,2,25650.0,0.1,46170.0,5642.55,4.0,2
+IND-2024-1034,2024-07-23,Lucknow,Uttar Pradesh,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),UPI (PhonePe/GPay),1,1250.0,0.1,1125.0,355.78,4.0,3
+IND-2024-1269,2024-07-24,Chennai,Tamil Nadu,Electronics,Noise-Cancelling Earbuds,Corporate,Credit Card,1,4250.0,0.0,4250.0,966.16,4.0,5
+IND-2024-1045,2024-07-27,Chennai,Tamil Nadu,Beauty & Personal Care,Sunscreen & Vitamin C Serum,B2C Consumer,No-Cost EMI,1,830.0,0.15,705.5,238.74,4.8,2
+IND-2024-1322,2024-07-28,Pune,Maharashtra,Apparel,Kanchipuram Silk Saree,Small Business (MSME),Credit Card,5,9710.0,0.25,36412.5,12343.15,3.8,1
+IND-2024-1296,2024-07-29,Pune,Maharashtra,Home & Kitchen,Bedsheet & Quilt Combo,Prime Member,No-Cost EMI,2,2820.0,0.05,5358.0,1349.19,4.8,1
+IND-2024-1185,2024-07-31,Ahmedabad,Gujarat,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Net Banking,2,1370.0,0.1,2466.0,841.98,3.8,3
+IND-2024-1024,2024-08-02,Lucknow,Uttar Pradesh,Beauty & Personal Care,Herbal Face Scrub & Mask,Small Business (MSME),Credit Card,5,640.0,0.05,3040.0,958.44,4.5,2
+IND-2024-1168,2024-08-02,Delhi,Delhi,Home & Kitchen,Air Fryer 4.5L,B2C Consumer,Credit Card,3,5440.0,0.15,13872.0,2930.47,5.0,2
+IND-2024-1049,2024-08-03,Pune,Maharashtra,Electronics,Laptops & Tablets,B2C Consumer,UPI (PhonePe/GPay),2,38660.0,0.1,69588.0,5744.77,3.8,5
+IND-2024-1230,2024-08-04,Delhi,Delhi,Home & Kitchen,Air Fryer 4.5L,Corporate,No-Cost EMI,2,5940.0,0.05,11286.0,1943.05,3.8,4
+IND-2024-1271,2024-08-06,Delhi,Delhi,Grocery,Organic Cold-Pressed Oils,B2C Consumer,No-Cost EMI,1,880.0,0.15,748.0,116.77,4.4,3
+IND-2024-1048,2024-08-07,Delhi,Delhi,Home & Kitchen,Air Fryer 4.5L,Small Business (MSME),Cash on Delivery,1,4170.0,0.05,3961.5,742.46,4.5,4
+IND-2024-1242,2024-08-07,Hyderabad,Telangana,Apparel,Denim Jeans,Small Business (MSME),Net Banking,5,1790.0,0.1,8055.0,1414.46,4.0,2
+IND-2024-1113,2024-08-08,Delhi,Delhi,Apparel,Festive Nehru Jacket,Small Business (MSME),UPI (PhonePe/GPay),1,3280.0,0.2,2624.0,750.47,4.8,4
+IND-2024-1226,2024-08-09,Kolkata,West Bengal,Electronics,Smartwatches,Prime Member,Net Banking,1,4520.0,0.0,4520.0,1055.48,4.0,3
+IND-2024-1314,2024-08-10,Lucknow,Uttar Pradesh,Home & Kitchen,Bedsheet & Quilt Combo,Prime Member,Net Banking,2,2490.0,0.0,4980.0,1158.13,3.8,5
+IND-2024-1234,2024-08-13,Jaipur,Rajasthan,Apparel,Festive Nehru Jacket,B2C Consumer,Cash on Delivery,4,2170.0,0.05,8246.0,2013.85,4.5,2
+IND-2024-1085,2024-08-14,Chennai,Tamil Nadu,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),Credit Card,1,1010.0,0.1,909.0,314.03,4.8,4
+IND-2024-1346,2024-08-14,Hyderabad,Telangana,Grocery,Organic Cold-Pressed Oils,B2C Consumer,Credit Card,8,810.0,0.1,5832.0,803.94,4.2,3
+IND-2024-1039,2024-08-14,Lucknow,Uttar Pradesh,Apparel,Festive Nehru Jacket,B2C Consumer,Net Banking,8,3960.0,0.25,23760.0,5565.45,5.0,3
+IND-2024-1332,2024-08-15,Surat,Gujarat,Home & Kitchen,Tri-ply Stainless Steel Cookware,B2C Consumer,UPI (PhonePe/GPay),1,5280.0,0.0,5280.0,1268.69,4.8,2
+IND-2024-1232,2024-08-15,Ahmedabad,Gujarat,Apparel,Kanchipuram Silk Saree,Small Business (MSME),Credit Card,3,9870.0,0.05,28129.5,7912.49,5.0,2
+IND-2024-1180,2024-08-16,Pune,Maharashtra,Grocery,Darjeeling Premium Tea,Prime Member,UPI (PhonePe/GPay),2,640.0,0.1,1152.0,216.92,4.0,2
+IND-2024-1128,2024-08-17,Hyderabad,Telangana,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,Net Banking,3,1070.0,0.15,2728.5,978.94,4.9,2
+IND-2024-1210,2024-08-18,Ahmedabad,Gujarat,Apparel,Denim Jeans,Corporate,UPI (PhonePe/GPay),1,2490.0,0.05,2365.5,498.6,4.5,4
+IND-2024-1195,2024-08-18,Chennai,Tamil Nadu,Electronics,Smartwatches,B2C Consumer,Credit Card,1,2730.0,0.2,2184.0,495.32,5.0,2
+IND-2024-1121,2024-08-18,Bengaluru,Karnataka,Grocery,Royal Basmati Rice 10kg,Corporate,No-Cost EMI,1,1200.0,0.05,1140.0,121.1,5.0,3
+IND-2024-1268,2024-08-19,Jaipur,Rajasthan,Beauty & Personal Care,Ayurvedic Hair Care Kit,B2C Consumer,Credit Card,1,810.0,0.05,769.5,218.28,4.2,2
+IND-2024-1233,2024-08-22,Surat,Gujarat,Home & Kitchen,Tri-ply Stainless Steel Cookware,Small Business (MSME),No-Cost EMI,1,4260.0,0.2,3408.0,785.09,3.8,4
+IND-2024-1139,2024-08-22,Mumbai,Maharashtra,Grocery,Organic Cold-Pressed Oils,Small Business (MSME),No-Cost EMI,1,470.0,0.0,470.0,62.16,4.8,7
+IND-2024-1178,2024-08-22,Lucknow,Uttar Pradesh,Grocery,Organic Cold-Pressed Oils,Prime Member,Credit Card,1,460.0,0.1,414.0,59.14,4.8,4
+IND-2024-1033,2024-08-23,Chennai,Tamil Nadu,Grocery,Organic Cold-Pressed Oils,B2C Consumer,Net Banking,2,550.0,0.15,935.0,124.16,4.7,3
+IND-2024-1205,2024-08-23,Surat,Gujarat,Apparel,Cotton Kurta Set,B2C Consumer,UPI (PhonePe/GPay),4,1710.0,0.0,6840.0,2003.53,4.8,2
+IND-2024-1301,2024-08-25,Jaipur,Rajasthan,Home & Kitchen,Tri-ply Stainless Steel Cookware,Prime Member,Cash on Delivery,1,4650.0,0.15,3952.5,853.44,5.0,2
+IND-2024-1055,2024-08-26,Kolkata,West Bengal,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Corporate,Credit Card,1,760.0,0.0,760.0,248.36,4.9,3
+IND-2024-1198,2024-08-28,Chennai,Tamil Nadu,Apparel,Denim Jeans,B2C Consumer,Net Banking,1,2060.0,0.05,1957.0,419.73,5.0,5
+IND-2024-1174,2024-08-29,Bengaluru,Karnataka,Apparel,Kanchipuram Silk Saree,Corporate,Cash on Delivery,8,13660.0,0.05,103816.0,30275.0,4.4,4
+IND-2024-1224,2024-08-31,Bengaluru,Karnataka,Home & Kitchen,Bedsheet & Quilt Combo,Small Business (MSME),UPI (PhonePe/GPay),1,2230.0,0.25,1672.5,399.43,4.2,5
+IND-2024-1101,2024-09-02,Kolkata,West Bengal,Home & Kitchen,Tri-ply Stainless Steel Cookware,Small Business (MSME),No-Cost EMI,5,3960.0,0.0,19800.0,4656.05,4.2,1
+IND-2024-1241,2024-09-05,Chennai,Tamil Nadu,Electronics,Smartphones (5G),Prime Member,Cash on Delivery,3,20290.0,0.15,51739.5,5307.76,4.9,1
+IND-2024-1014,2024-09-05,Bengaluru,Karnataka,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Credit Card,2,850.0,0.2,1360.0,391.48,5.0,4
+IND-2024-1074,2024-09-05,Bengaluru,Karnataka,Electronics,Smartwatches,B2C Consumer,Credit Card,1,5690.0,0.0,5690.0,1271.42,4.0,2
+IND-2024-1201,2024-09-07,Delhi,Delhi,Beauty & Personal Care,Herbal Face Scrub & Mask,B2C Consumer,UPI (PhonePe/GPay),2,880.0,0.0,1760.0,598.52,4.8,1
+IND-2024-1317,2024-09-07,Chennai,Tamil Nadu,Apparel,Cotton Kurta Set,Prime Member,Credit Card,5,2810.0,0.15,11942.5,2861.5,4.4,3
+IND-2024-1284,2024-09-09,Kolkata,West Bengal,Grocery,Dry Fruits & Almonds 1kg,Prime Member,Credit Card,2,930.0,0.2,1488.0,233.31,4.9,1
+IND-2024-1336,2024-09-09,Delhi,Delhi,Home & Kitchen,Tri-ply Stainless Steel Cookware,Corporate,Credit Card,1,3120.0,0.0,3120.0,739.76,4.9,4
+IND-2024-1261,2024-09-09,Hyderabad,Telangana,Beauty & Personal Care,Ayurvedic Hair Care Kit,Small Business (MSME),UPI (PhonePe/GPay),5,880.0,0.0,4400.0,1295.22,4.7,1
+IND-2024-1272,2024-09-12,Kolkata,West Bengal,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Prime Member,No-Cost EMI,1,550.0,0.05,522.5,178.44,3.8,7
+IND-2024-1338,2024-09-15,Delhi,Delhi,Home & Kitchen,Tri-ply Stainless Steel Cookware,Corporate,No-Cost EMI,1,4110.0,0.15,3493.5,808.21,4.2,3
+IND-2024-1120,2024-09-16,Kolkata,West Bengal,Home & Kitchen,Tri-ply Stainless Steel Cookware,Corporate,No-Cost EMI,3,3820.0,0.25,8595.0,1636.14,4.2,6
+IND-2024-1165,2024-09-17,Jaipur,Rajasthan,Home & Kitchen,Smart LED Ceiling Lights,Corporate,No-Cost EMI,1,2110.0,0.1,1899.0,479.52,4.5,4
+IND-2024-1111,2024-09-19,Bengaluru,Karnataka,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),UPI (PhonePe/GPay),2,940.0,0.2,1504.0,224.7,4.4,2
+IND-2024-1179,2024-09-20,Chennai,Tamil Nadu,Electronics,Laptops & Tablets,Prime Member,UPI (PhonePe/GPay),1,60750.0,0.05,57712.5,5158.99,4.5,2
+IND-2024-1135,2024-09-20,Surat,Gujarat,Apparel,Cotton Kurta Set,Corporate,Credit Card,1,1690.0,0.1,1521.0,392.73,4.0,3
+IND-2024-1237,2024-09-20,Lucknow,Uttar Pradesh,Electronics,Smartwatches,Prime Member,Credit Card,3,6830.0,0.0,20490.0,5173.81,4.4,1
+IND-2024-1042,2024-09-22,Ahmedabad,Gujarat,Electronics,Smartwatches,Small Business (MSME),Cash on Delivery,1,6630.0,0.05,6298.5,1510.97,5.0,2
+IND-2024-1164,2024-09-22,Ahmedabad,Gujarat,Apparel,Cotton Kurta Set,Small Business (MSME),No-Cost EMI,2,1760.0,0.05,3344.0,906.25,4.7,3
+IND-2024-1153,2024-09-22,Pune,Maharashtra,Electronics,Noise-Cancelling Earbuds,Small Business (MSME),No-Cost EMI,8,2090.0,0.1,15048.0,3338.97,5.0,1
+IND-2024-1116,2024-09-25,Bengaluru,Karnataka,Home & Kitchen,Smart LED Ceiling Lights,B2C Consumer,No-Cost EMI,1,2570.0,0.05,2441.5,511.49,5.0,2
+IND-2024-1204,2024-09-25,Delhi,Delhi,Apparel,Cotton Kurta Set,Corporate,UPI (PhonePe/GPay),1,2250.0,0.1,2025.0,527.42,4.7,6
+IND-2024-1315,2024-09-28,Hyderabad,Telangana,Electronics,Smartphones (5G),Small Business (MSME),Credit Card,1,27150.0,0.25,20362.5,2719.85,4.0,2
+IND-2024-1240,2024-09-30,Kolkata,West Bengal,Apparel,Festive Nehru Jacket,Small Business (MSME),No-Cost EMI,2,4040.0,0.1,7272.0,2076.96,4.2,3
+IND-2024-1227,2024-10-01,Delhi,Delhi,Grocery,Darjeeling Premium Tea,Small Business (MSME),No-Cost EMI,1,450.0,0.25,337.5,67.36,4.8,3
+IND-2024-1292,2024-10-01,Lucknow,Uttar Pradesh,Home & Kitchen,Air Fryer 4.5L,Prime Member,UPI (PhonePe/GPay),1,5670.0,0.25,4252.5,695.2,4.9,2
+IND-2024-1252,2024-10-01,Jaipur,Rajasthan,Beauty & Personal Care,Ayurvedic Hair Care Kit,Prime Member,No-Cost EMI,1,1030.0,0.2,824.0,296.98,4.7,2
+IND-2024-1188,2024-10-02,Kolkata,West Bengal,Beauty & Personal Care,Ayurvedic Hair Care Kit,Small Business (MSME),Cash on Delivery,1,1570.0,0.0,1570.0,541.01,5.0,2
+IND-2024-1009,2024-10-02,Pune,Maharashtra,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Prime Member,No-Cost EMI,1,1220.0,0.05,1159.0,466.17,4.9,1
+IND-2024-1140,2024-10-05,Ahmedabad,Gujarat,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Net Banking,1,1330.0,0.1,1197.0,132.7,4.5,1
+IND-2024-1043,2024-10-07,Ahmedabad,Gujarat,Apparel,Festive Nehru Jacket,Corporate,Credit Card,3,3070.0,0.25,6907.5,1675.97,4.5,2
+IND-2024-1020,2024-10-08,Bengaluru,Karnataka,Electronics,Smartphones (5G),Corporate,Cash on Delivery,5,31600.0,0.05,150100.0,16208.88,4.4,4
+IND-2024-1059,2024-10-08,Chennai,Tamil Nadu,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),UPI (PhonePe/GPay),1,1070.0,0.0,1070.0,171.15,5.0,6
+IND-2024-1206,2024-10-09,Ahmedabad,Gujarat,Electronics,Smartphones (5G),Small Business (MSME),No-Cost EMI,1,28140.0,0.15,23919.0,2995.06,4.0,5
+IND-2024-1203,2024-10-09,Kolkata,West Bengal,Electronics,Smartphones (5G),Corporate,Credit Card,1,25880.0,0.1,23292.0,2390.16,4.0,5
+IND-2024-1027,2024-10-10,Pune,Maharashtra,Electronics,Smartwatches,Small Business (MSME),Net Banking,4,3690.0,0.25,11070.0,2474.29,4.4,3
+IND-2024-1162,2024-10-10,Pune,Maharashtra,Electronics,Laptops & Tablets,B2C Consumer,Credit Card,3,55140.0,0.1,148878.0,14706.68,4.0,2
+IND-2024-1213,2024-10-10,Bengaluru,Karnataka,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,UPI (PhonePe/GPay),4,780.0,0.0,3120.0,877.55,5.0,5
+IND-2024-1107,2024-10-11,Chennai,Tamil Nadu,Electronics,Noise-Cancelling Earbuds,B2C Consumer,No-Cost EMI,3,3220.0,0.2,7728.0,2207.05,4.5,1
+IND-2024-1333,2024-10-12,Jaipur,Rajasthan,Electronics,Smartphones (5G),Prime Member,Cash on Delivery,8,29290.0,0.25,175740.0,19852.56,4.7,2
+IND-2024-1171,2024-10-13,Chandigarh,Punjab,Grocery,Darjeeling Premium Tea,Corporate,Net Banking,2,410.0,0.15,697.0,140.36,4.2,2
+IND-2024-1280,2024-10-14,Chandigarh,Punjab,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Small Business (MSME),Credit Card,2,680.0,0.05,1292.0,435.7,4.2,3
+IND-2024-1147,2024-10-14,Bengaluru,Karnataka,Grocery,Darjeeling Premium Tea,Corporate,Credit Card,1,700.0,0.2,560.0,94.32,4.0,1
+IND-2024-1118,2024-10-15,Surat,Gujarat,Home & Kitchen,Smart LED Ceiling Lights,Corporate,Cash on Delivery,2,2770.0,0.05,5263.0,1240.29,4.5,4
+IND-2024-1281,2024-10-20,Kolkata,West Bengal,Beauty & Personal Care,Ayurvedic Hair Care Kit,B2C Consumer,Cash on Delivery,1,920.0,0.2,736.0,215.8,4.2,2
+IND-2024-1150,2024-10-20,Chennai,Tamil Nadu,Home & Kitchen,Air Fryer 4.5L,Corporate,No-Cost EMI,1,6140.0,0.1,5526.0,1017.86,4.8,4
+IND-2024-1151,2024-10-21,Bengaluru,Karnataka,Apparel,Denim Jeans,Prime Member,No-Cost EMI,1,2660.0,0.25,1995.0,401.08,4.2,4
+IND-2024-1052,2024-10-21,Lucknow,Uttar Pradesh,Home & Kitchen,Bedsheet & Quilt Combo,Prime Member,UPI (PhonePe/GPay),1,3670.0,0.2,2936.0,838.05,4.5,4
+IND-2024-1186,2024-10-23,Bengaluru,Karnataka,Electronics,Laptops & Tablets,B2C Consumer,Cash on Delivery,1,49710.0,0.0,49710.0,5057.18,3.8,2
+IND-2024-1199,2024-10-23,Chandigarh,Punjab,Home & Kitchen,Smart LED Ceiling Lights,Prime Member,Cash on Delivery,1,1560.0,0.15,1326.0,324.9,5.0,3
+IND-2024-1084,2024-10-25,Delhi,Delhi,Apparel,Festive Nehru Jacket,Corporate,Net Banking,2,3560.0,0.25,5340.0,1184.05,5.0,2
+IND-2024-1308,2024-10-25,Chandigarh,Punjab,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Net Banking,3,1110.0,0.25,2497.5,807.5,5.0,2
+IND-2024-1228,2024-10-27,Bengaluru,Karnataka,Grocery,Darjeeling Premium Tea,Small Business (MSME),No-Cost EMI,2,770.0,0.25,1155.0,220.75,4.0,3
+IND-2024-1077,2024-10-27,Surat,Gujarat,Home & Kitchen,Air Fryer 4.5L,Corporate,Cash on Delivery,2,5560.0,0.1,10008.0,1931.14,4.7,4
+IND-2024-1316,2024-10-28,Pune,Maharashtra,Apparel,Kanchipuram Silk Saree,Small Business (MSME),Cash on Delivery,1,12330.0,0.1,11097.0,3285.08,4.2,2
+IND-2024-1318,2024-10-28,Jaipur,Rajasthan,Apparel,Kanchipuram Silk Saree,Small Business (MSME),No-Cost EMI,2,7980.0,0.0,15960.0,4608.73,3.8,3
+IND-2024-1119,2024-10-29,Mumbai,Maharashtra,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),UPI (PhonePe/GPay),2,1110.0,0.0,2220.0,213.26,4.0,3
+IND-2024-1066,2024-10-31,Ahmedabad,Gujarat,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Credit Card,3,1070.0,0.25,2407.5,266.72,4.5,4
+IND-2024-1098,2024-11-01,Mumbai,Maharashtra,Grocery,Organic Cold-Pressed Oils,B2C Consumer,Credit Card,2,910.0,0.05,1729.0,213.73,3.8,2
+IND-2024-1220,2024-11-02,Ahmedabad,Gujarat,Beauty & Personal Care,Sunscreen & Vitamin C Serum,B2C Consumer,Net Banking,5,930.0,0.25,3487.5,1190.71,5.0,3
+IND-2024-1013,2024-11-02,Chennai,Tamil Nadu,Home & Kitchen,Tri-ply Stainless Steel Cookware,Prime Member,No-Cost EMI,1,2600.0,0.1,2340.0,452.99,4.0,1
+IND-2024-1112,2024-11-02,Mumbai,Maharashtra,Electronics,Smartwatches,Small Business (MSME),Net Banking,1,3860.0,0.05,3667.0,870.67,4.0,1
+IND-2024-1307,2024-11-03,Kolkata,West Bengal,Grocery,Organic Cold-Pressed Oils,Corporate,Cash on Delivery,2,790.0,0.1,1422.0,184.71,4.8,3
+IND-2024-1053,2024-11-03,Bengaluru,Karnataka,Beauty & Personal Care,Ayurvedic Hair Care Kit,Small Business (MSME),UPI (PhonePe/GPay),1,1120.0,0.1,1008.0,280.85,4.8,4
+IND-2024-1217,2024-11-04,Chandigarh,Punjab,Apparel,Festive Nehru Jacket,Corporate,No-Cost EMI,8,2720.0,0.1,19584.0,4773.27,4.4,2
+IND-2024-1004,2024-11-05,Pune,Maharashtra,Electronics,Laptops & Tablets,Small Business (MSME),No-Cost EMI,8,56230.0,0.15,382364.0,30064.37,4.7,3
+IND-2024-1157,2024-11-06,Delhi,Delhi,Grocery,Darjeeling Premium Tea,Small Business (MSME),No-Cost EMI,4,720.0,0.15,2448.0,391.83,5.0,1
+IND-2024-1064,2024-11-06,Surat,Gujarat,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Net Banking,1,1630.0,0.15,1385.5,416.41,3.8,3
+IND-2024-1304,2024-11-07,Pune,Maharashtra,Grocery,Dry Fruits & Almonds 1kg,Corporate,Net Banking,4,1570.0,0.15,5338.0,741.13,5.0,4
+IND-2024-1254,2024-11-07,Mumbai,Maharashtra,Grocery,Organic Cold-Pressed Oils,Corporate,Net Banking,3,510.0,0.25,1147.5,137.1,5.0,3
+IND-2024-1328,2024-11-09,Mumbai,Maharashtra,Apparel,Festive Nehru Jacket,B2C Consumer,Net Banking,1,4290.0,0.15,3646.5,931.22,4.7,1
+IND-2024-1095,2024-11-11,Kolkata,West Bengal,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),UPI (PhonePe/GPay),1,1300.0,0.15,1105.0,125.44,4.7,3
+IND-2024-1321,2024-11-12,Bengaluru,Karnataka,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),No-Cost EMI,2,1340.0,0.2,2144.0,195.09,4.4,2
+IND-2024-1040,2024-11-13,Chennai,Tamil Nadu,Electronics,Smartwatches,B2C Consumer,Credit Card,1,5530.0,0.05,5253.5,1033.5,4.9,3
+IND-2024-1341,2024-11-15,Chandigarh,Punjab,Grocery,Darjeeling Premium Tea,Prime Member,No-Cost EMI,1,810.0,0.25,607.5,114.27,5.0,3
+IND-2024-1067,2024-11-16,Surat,Gujarat,Apparel,Festive Nehru Jacket,Prime Member,UPI (PhonePe/GPay),1,2200.0,0.05,2090.0,609.98,3.8,2
+IND-2024-1167,2024-11-18,Chandigarh,Punjab,Beauty & Personal Care,Sunscreen & Vitamin C Serum,B2C Consumer,Credit Card,2,620.0,0.0,1240.0,443.45,3.8,2
+IND-2024-1202,2024-11-18,Hyderabad,Telangana,Electronics,Smartwatches,Corporate,Cash on Delivery,2,2540.0,0.1,4572.0,873.2,3.8,1
+IND-2024-1253,2024-11-20,Lucknow,Uttar Pradesh,Electronics,Noise-Cancelling Earbuds,B2C Consumer,Cash on Delivery,3,3600.0,0.05,10260.0,2224.81,4.0,2
+IND-2024-1311,2024-11-20,Surat,Gujarat,Beauty & Personal Care,Herbal Face Scrub & Mask,Corporate,No-Cost EMI,4,390.0,0.2,1248.0,331.7,4.5,2
+IND-2024-1082,2024-11-20,Chandigarh,Punjab,Electronics,Laptops & Tablets,B2C Consumer,Net Banking,1,43660.0,0.0,43660.0,3394.21,4.7,2
+IND-2024-1092,2024-11-22,Chennai,Tamil Nadu,Electronics,Smartwatches,Prime Member,UPI (PhonePe/GPay),2,4620.0,0.2,7392.0,1542.33,4.9,5
+IND-2024-1001,2024-11-23,Bengaluru,Karnataka,Electronics,Noise-Cancelling Earbuds,B2C Consumer,No-Cost EMI,1,2230.0,0.0,2230.0,587.05,4.8,1
+IND-2024-1007,2024-11-23,Chandigarh,Punjab,Beauty & Personal Care,Ayurvedic Hair Care Kit,B2C Consumer,Net Banking,4,1520.0,0.0,6080.0,1787.45,4.8,2
+IND-2024-1154,2024-11-24,Delhi,Delhi,Beauty & Personal Care,Herbal Face Scrub & Mask,Small Business (MSME),No-Cost EMI,2,430.0,0.25,645.0,216.84,3.8,4
+IND-2024-1096,2024-11-26,Chennai,Tamil Nadu,Electronics,Laptops & Tablets,Prime Member,No-Cost EMI,8,47380.0,0.15,322184.0,25444.54,3.8,1
+IND-2024-1243,2024-11-28,Delhi,Delhi,Electronics,Laptops & Tablets,B2C Consumer,UPI (PhonePe/GPay),3,59270.0,0.05,168919.5,14879.99,3.8,2
+IND-2024-1080,2024-12-01,Delhi,Delhi,Electronics,Laptops & Tablets,B2C Consumer,Net Banking,1,64570.0,0.2,51656.0,4917.81,5.0,2
+IND-2024-1262,2024-12-02,Kolkata,West Bengal,Grocery,Royal Basmati Rice 10kg,B2C Consumer,Credit Card,10,1050.0,0.15,8925.0,890.37,4.5,1
+IND-2024-1335,2024-12-03,Hyderabad,Telangana,Electronics,Noise-Cancelling Earbuds,Small Business (MSME),UPI (PhonePe/GPay),2,2560.0,0.1,4608.0,1168.48,3.8,5
+IND-2024-1192,2024-12-04,Jaipur,Rajasthan,Apparel,Festive Nehru Jacket,Prime Member,Cash on Delivery,1,2680.0,0.2,2144.0,620.94,5.0,2
+IND-2024-1037,2024-12-05,Bengaluru,Karnataka,Grocery,Darjeeling Premium Tea,Prime Member,Credit Card,1,680.0,0.25,510.0,86.17,4.8,3
+IND-2024-1279,2024-12-05,Kolkata,West Bengal,Beauty & Personal Care,Ayurvedic Hair Care Kit,Corporate,Cash on Delivery,1,1100.0,0.05,1045.0,357.71,4.7,2
+IND-2024-1330,2024-12-05,Lucknow,Uttar Pradesh,Home & Kitchen,Air Fryer 4.5L,Prime Member,No-Cost EMI,2,6940.0,0.2,11104.0,1827.83,4.9,4
+IND-2024-1031,2024-12-07,Bengaluru,Karnataka,Grocery,Dry Fruits & Almonds 1kg,Prime Member,Cash on Delivery,3,1630.0,0.05,4645.5,773.04,3.8,2
+IND-2024-1291,2024-12-07,Bengaluru,Karnataka,Electronics,Noise-Cancelling Earbuds,B2C Consumer,Cash on Delivery,1,3920.0,0.2,3136.0,719.91,5.0,2
+IND-2024-1056,2024-12-08,Kolkata,West Bengal,Grocery,Royal Basmati Rice 10kg,Small Business (MSME),Net Banking,1,1200.0,0.15,1020.0,93.19,4.5,5
+IND-2024-1025,2024-12-09,Lucknow,Uttar Pradesh,Grocery,Dry Fruits & Almonds 1kg,B2C Consumer,UPI (PhonePe/GPay),3,1100.0,0.0,3300.0,422.13,5.0,2
+IND-2024-1125,2024-12-09,Kolkata,West Bengal,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Corporate,Credit Card,1,510.0,0.05,484.5,161.52,4.4,7
+IND-2024-1091,2024-12-11,Kolkata,West Bengal,Beauty & Personal Care,Sunscreen & Vitamin C Serum,Corporate,Net Banking,1,570.0,0.1,513.0,181.52,4.5,3
+IND-2024-1329,2024-12-13,Jaipur,Rajasthan,Beauty & Personal Care,Herbal Face Scrub & Mask,B2C Consumer,Cash on Delivery,8,660.0,0.25,3960.0,1320.99,4.4,2
+IND-2024-1088,2024-12-13,Chandigarh,Punjab,Apparel,Kanchipuram Silk Saree,B2C Consumer,No-Cost EMI,2,13080.0,0.1,23544.0,7674.75,4.7,3
+IND-2024-1123,2024-12-13,Kolkata,West Bengal,Grocery,Darjeeling Premium Tea,Small Business (MSME),UPI (PhonePe/GPay),2,710.0,0.2,1136.0,227.38,4.2,5
+IND-2024-1183,2024-12-14,Surat,Gujarat,Electronics,Laptops & Tablets,Prime Member,No-Cost EMI,1,55960.0,0.2,44768.0,3560.38,5.0,1
+IND-2024-1298,2024-12-16,Bengaluru,Karnataka,Apparel,Cotton Kurta Set,Corporate,No-Cost EMI,3,1710.0,0.1,4617.0,1203.33,4.0,2
+IND-2024-1200,2024-12-16,Chennai,Tamil Nadu,Grocery,Dry Fruits & Almonds 1kg,Small Business (MSME),Credit Card,2,1620.0,0.15,2754.0,408.25,4.2,3
+IND-2024-1320,2024-12-17,Lucknow,Uttar Pradesh,Electronics,Noise-Cancelling Earbuds,Prime Member,Cash on Delivery,1,2760.0,0.2,2208.0,513.91,4.0,3
+IND-2024-1087,2024-12-17,Chandigarh,Punjab,Electronics,Laptops & Tablets,Small Business (MSME),Credit Card,5,66320.0,0.05,315020.0,29262.45,4.4,3
+IND-2024-1166,2024-12-18,Lucknow,Uttar Pradesh,Electronics,Laptops & Tablets,B2C Consumer,No-Cost EMI,2,47030.0,0.2,75248.0,6930.05,4.9,2
+IND-2024-1060,2024-12-19,Delhi,Delhi,Apparel,Cotton Kurta Set,Small Business (MSME),UPI (PhonePe/GPay),1,2450.0,0.2,1960.0,627.27,4.4,2
+IND-2024-1015,2024-12-19,Hyderabad,Telangana,Grocery,Dry Fruits & Almonds 1kg,Corporate,UPI (PhonePe/GPay),2,1650.0,0.15,2805.0,471.19,4.4,2
