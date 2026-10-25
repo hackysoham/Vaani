@@ -4,6 +4,8 @@ Safely executes Pandas expressions against user DataFrames and generates data ta
 """
 
 import ast
+import re
+import difflib
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, Tuple
@@ -204,14 +206,73 @@ def execute_pandas_query(df: pd.DataFrame, code_str: str) -> Dict[str, Any]:
             "clean_code": processed_code,
             "result_df": result_df,
             "takeaway": takeaway,
+            "healed": False,
             "error": None
         }
 
     except Exception as e:
+        # Attempt automatic column mismatch self-healing
+        import difflib
+        err_msg = str(e)
+        healed_code = processed_code
+
+        # Check for KeyError
+        if isinstance(e, KeyError) or "not in index" in err_msg:
+            missing_col = err_msg.strip("'\" ").split()[-1].strip("'\" []")
+            valid_cols = list(df.columns)
+
+            # Common business synonyms
+            synonyms = {
+                "sales": ["revenue", "gross_revenue", "amount", "total"],
+                "rev": ["revenue"],
+                "profit": ["net_profit", "margin", "revenue"],
+                "cities": ["city", "location", "region"],
+                "categories": ["category", "sub_category", "segment"],
+                "products": ["sub_category", "product_name", "item"],
+                "customer": ["customer_segment", "client"],
+                "cost": ["unit_price", "price"]
+            }
+
+            candidate = None
+            # Check close match
+            close_matches = difflib.get_close_matches(missing_col.lower(), valid_cols, n=1, cutoff=0.45)
+            if close_matches:
+                candidate = close_matches[0]
+            elif missing_col.lower() in synonyms:
+                for syn in synonyms[missing_col.lower()]:
+                    if syn in valid_cols:
+                        candidate = syn
+                        break
+
+            if candidate and candidate != missing_col:
+                healed_code = re.sub(rf"['\"]{re.escape(missing_col)}['\"]", f"'{candidate}'", processed_code)
+                try:
+                    healed_out = eval(healed_code, sandbox_globals, sandbox_locals)
+                    if isinstance(healed_out, pd.DataFrame):
+                        res_df = healed_out
+                    elif isinstance(healed_out, pd.Series):
+                        res_df = healed_out.reset_index()
+                    else:
+                        res_df = pd.DataFrame([{"result": healed_out}])
+
+                    takeaway = compute_takeaway(res_df, healed_code)
+                    return {
+                        "success": True,
+                        "clean_code": healed_code,
+                        "result_df": res_df,
+                        "takeaway": takeaway,
+                        "healed": True,
+                        "healed_note": f"Auto-corrected column '{missing_col}' -> '{candidate}'",
+                        "error": None
+                    }
+                except Exception:
+                    pass
+
         return {
             "success": False,
             "clean_code": processed_code,
             "result_df": None,
             "takeaway": "",
+            "healed": False,
             "error": f"Pandas execution error: {type(e).__name__}: {str(e)}"
         }

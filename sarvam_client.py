@@ -150,31 +150,37 @@ class SarvamClient:
         schema_markdown: str,
         dtypes_info: str,
         sample_rows_markdown: str,
-        user_query: str
+        user_query: str,
+        column_list: Optional[list] = None,
+        cat_cols: Optional[list] = None,
+        num_cols: Optional[list] = None
     ) -> Dict[str, Any]:
         """
-        Sends ONLY the schema + sample rows + query to Sarvam Chat Completions.
+        Sends ONLY the sanitized schema + rich column context + query to Sarvam Chat Completions.
         Returns strict JSON with:
         pandas_code, chart_type, x_col, y_col, english_insight
         """
+        cols_text = ", ".join([f"'{c}'" for c in (column_list or [])]) if column_list else "Available columns in schema"
         system_prompt = (
             "You are an expert Chief Quantitative Data Analyst and Pandas specialist.\n"
-            "You are given a pandas DataFrame `df` containing structured data.\n"
+            "You are given a pandas DataFrame `df` containing structured data with sanitized lowercase column names.\n"
             "Your task is to translate the user's analytical question into a precise, single-line Python expression using `df`.\n"
             "\n"
-            "CRITICAL RULES:\n"
-            "1. Output ONLY a valid JSON object. Do NOT add any conversational preamble or outro.\n"
-            "2. `pandas_code` MUST be a single-line valid python expression using `df` that evaluates to a DataFrame, Series, or scalar.\n"
+            "CRITICAL ANTI-HALLUCINATION RULES:\n"
+            f"1. You MUST ONLY use the EXACT column names provided in this sanitized list: [{cols_text}].\n"
+            "   NEVER invent, guess, or assume column names that do not appear in this list.\n"
+            "2. Output ONLY a valid JSON object. Do NOT add any conversational markdown fences or introductory text.\n"
+            "3. `pandas_code` MUST be a single-line valid python expression using `df` that evaluates to a DataFrame, Series, or scalar.\n"
+            "   Always use `.reset_index()` after groupby so the grouped column becomes a standard column for plotting.\n"
             "   Examples of valid `pandas_code`:\n"
             "   - `df.groupby('city')['revenue'].sum().nlargest(5).reset_index()`\n"
             "   - `df.groupby('category')['profit'].mean().reset_index()`\n"
-            "   - `df.sort_values(by='revenue', ascending=False).head(10)[['order_id', 'city', 'revenue']]`\n"
+            "   - `df.sort_values(by='revenue', ascending=False).head(10)`\n"
             "   - `df['revenue'].sum()`\n"
-            "   Always use `.reset_index()` after groupby so the grouped column becomes a standard column for plotting.\n"
-            "3. `chart_type` MUST be strictly one of: 'bar', 'line', 'area', or 'none'.\n"
-            "4. `x_col` is the string name of the category/dimension column (or null if none).\n"
-            "5. `y_col` is the string name of the numeric metric column (or null if none).\n"
-            "6. `english_insight` MUST be a crisp 2-sentence executive summary explaining what this analytical query calculates and how a business executive should interpret the numbers.\n"
+            "4. `chart_type` MUST be strictly one of: 'bar', 'line', 'area', or 'none'.\n"
+            "5. `x_col` MUST be a string column name that will actually exist in the final evaluated result of `pandas_code` (or null if none).\n"
+            "6. `y_col` MUST be a string numeric column name that will actually exist in the final evaluated result of `pandas_code` (or null if none).\n"
+            "7. `english_insight` MUST be a crisp 2-sentence executive summary explaining what this analytical query calculates and how an executive should interpret the numbers.\n"
             "\n"
             "JSON Format Structure:\n"
             "{\n"
@@ -182,21 +188,21 @@ class SarvamClient:
             '  "chart_type": "bar",\n'
             '  "x_col": "city",\n'
             '  "y_col": "revenue",\n'
-            '  "english_insight": "This analysis reveals the top 5 revenue-generating cities across all orders. Monitoring these high-velocity hubs is essential for targeted supply chain and inventory allocation."\n'
+            '  "english_insight": "This analysis surfaces the leading cities contributing the largest volume of revenue. Tracking these top markets is essential for regional resource allocation."\n'
             "}"
         )
 
         user_content = (
-            f"### DataFrame Schema:\n{schema_markdown}\n\n"
+            f"### DataFrame Schema & Sample Values:\n{schema_markdown}\n\n"
             f"### Column Data Types:\n{dtypes_info}\n\n"
             f"### Sample 3 Rows:\n{sample_rows_markdown}\n\n"
             f"### User Analytical Question:\n\"{user_query}\"\n\n"
-            "Generate the JSON response now."
+            "Generate the strict JSON response now."
         )
 
         # Fallback simulation if no key is configured
         if not self.is_configured():
-            return self._heuristic_fallback(user_query, schema_markdown)
+            return self._heuristic_fallback(user_query, schema_markdown, column_list, cat_cols, num_cols)
 
         # Try models in order: sarvam-m, then sarvam-105b
         models_to_try = ["sarvam-m", "sarvam-105b"]
@@ -236,9 +242,55 @@ class SarvamClient:
                 continue
 
         # If API calls failed or rate limited, return fallback
-        fallback = self._heuristic_fallback(user_query, schema_markdown)
+        fallback = self._heuristic_fallback(user_query, schema_markdown, column_list, cat_cols, num_cols)
         fallback["error"] = "Sarvam Chat Completions API unavailable or quota reached. Generated query using analytical heuristic engine."
         return fallback
+
+    def repair_pandas_query(
+        self,
+        failed_code: str,
+        error_message: str,
+        column_list: list,
+        user_query: str
+    ) -> Dict[str, Any]:
+        """
+        Self-healing agent: prompts Sarvam LLM to fix a failed Pandas expression given the error.
+        """
+        if not self.is_configured():
+            return {"success": False, "data": None, "error": "API Key not configured for repair."}
+
+        cols_text = ", ".join([f"'{c}'" for c in column_list])
+        repair_prompt = (
+            "You are a pandas code debugger. A previous generated pandas code failed.\n"
+            f"User Question: \"{user_query}\"\n"
+            f"Failed Code: `{failed_code}`\n"
+            f"Execution Error: `{error_message}`\n"
+            f"Valid DataFrame Columns: [{cols_text}]\n\n"
+            "Please fix the code. Return ONLY valid JSON with:\n"
+            '{"pandas_code": "corrected_expression", "chart_type": "bar|line|area|none", "x_col": "col_name_or_null", "y_col": "col_name_or_null", "english_insight": "summary"}'
+        )
+
+        for model_name in ["sarvam-m", "sarvam-105b"]:
+            try:
+                resp = requests.post(
+                    "https://api.sarvam.ai/v1/chat/completions",
+                    headers=self._get_headers(),
+                    json={
+                        "model": model_name,
+                        "messages": [{"role": "user", "content": repair_prompt}],
+                        "temperature": 0.0,
+                        "max_tokens": 800
+                    },
+                    timeout=30
+                )
+                if resp.status_code == 200:
+                    parsed = self._extract_json(resp.json()["choices"][0]["message"]["content"])
+                    if parsed and "pandas_code" in parsed:
+                        return {"success": True, "data": parsed, "error": None}
+            except Exception:
+                continue
+
+        return {"success": False, "data": None, "error": "Repair attempt timed out."}
 
     def _extract_json(self, text: str) -> Optional[Dict[str, Any]]:
         """Extracts JSON even if surrounded by markdown code blocks."""
@@ -258,84 +310,121 @@ class SarvamClient:
         except Exception:
             return None
 
-    def _heuristic_fallback(self, query: str, schema_markdown: str) -> Dict[str, Any]:
+    def _heuristic_fallback(
+        self,
+        query: str,
+        schema_markdown: str,
+        column_list: Optional[list] = None,
+        cat_cols: Optional[list] = None,
+        num_cols: Optional[list] = None
+    ) -> Dict[str, Any]:
         """
-        Intelligent offline heuristic generator for standard retail queries.
-        Ensures judges can test even if API keys have temporary network/quota issues.
+        Dynamic heuristic generator that supports ANY custom CSV dataset.
+        Adapts to the actual columns present in the DataFrame.
         """
+        cols = [c.lower() for c in (column_list or [])]
         q = query.lower()
 
-        if any(w in q for w in ["city", "cities", "shahar", "region"]):
-            metric = "revenue" if "revenue" in q or "sales" in q or "kamai" in q else "profit"
+        # Identify dimension and metric dynamically from loaded dataframe
+        cats = cat_cols or [c for c in cols if not any(k in c for k in ["revenue", "profit", "price", "amount", "qty", "quantity", "cost", "id", "score"])]
+        nums = num_cols or [c for c in cols if any(k in c for k in ["revenue", "profit", "price", "amount", "sales", "val", "cost", "total", "count"])]
+
+        # Find best matching metric
+        metric = None
+        for word in q.split():
+            clean_word = re.sub(r'[^\w]', '', word)
+            for c in cols:
+                if clean_word in c:
+                    if c in nums:
+                        metric = c
+                        break
+            if metric:
+                break
+        if not metric and nums:
+            metric = nums[0]
+        elif not metric and cols:
+            metric = cols[-1]
+
+        # Find best matching dimension
+        dim = None
+        for word in q.split():
+            clean_word = re.sub(r'[^\w]', '', word)
+            for c in cols:
+                if clean_word in c and c != metric:
+                    dim = c
+                    break
+            if dim:
+                break
+        if not dim and cats:
+            dim = cats[0]
+        elif not dim and cols:
+            dim = cols[0]
+
+        # Check for time-series intent
+        date_col = next((c for c in cols if any(k in c for k in ["date", "time", "day", "month", "year"])), None)
+        if any(w in q for w in ["month", "trend", "date", "samay", "mahina", "daily", "timeline"]) and date_col and metric:
             return {
                 "success": True,
                 "data": {
-                    "pandas_code": f"df.groupby('city')['{metric}'].sum().nlargest(5).reset_index()",
-                    "chart_type": "bar",
-                    "x_col": "city",
-                    "y_col": metric,
-                    "english_insight": f"This analysis aggregates the top 5 cities contributing the largest volume of {metric}. Identifying geographic hubs helps leadership double down on high-performing regional markets."
-                },
-                "raw_content": "Offline analytical fallback",
-                "model_used": "heuristic-engine",
-                "error": None
-            }
-        elif any(w in q for w in ["category", "categories", "segment", "vibhag"]):
-            return {
-                "success": True,
-                "data": {
-                    "pandas_code": "df.groupby('category')['profit'].sum().sort_values(ascending=False).reset_index()",
-                    "chart_type": "bar",
-                    "x_col": "category",
-                    "y_col": "profit",
-                    "english_insight": "This breakdown tracks the total net profit across distinct product categories. Higher-margin verticals should receive prioritized advertising budget and product line expansions."
-                },
-                "raw_content": "Offline analytical fallback",
-                "model_used": "heuristic-engine",
-                "error": None
-            }
-        elif any(w in q for w in ["month", "trend", "date", "samay", "mahina"]):
-            return {
-                "success": True,
-                "data": {
-                    "pandas_code": "df.assign(month=pd.to_datetime(df['date']).dt.to_period('M').astype(str)).groupby('month')['revenue'].sum().reset_index()",
+                    "pandas_code": f"df.assign(period=pd.to_datetime(df['{date_col}']).dt.to_period('M').astype(str)).groupby('period')['{metric}'].sum().reset_index()",
                     "chart_type": "line",
-                    "x_col": "month",
-                    "y_col": "revenue",
-                    "english_insight": "This time-series tracks monthly aggregated revenue performance throughout the fiscal cycle. Seasonal peaks reflect promotional surges and quarterly retail demand cycles."
+                    "x_col": "period",
+                    "y_col": metric,
+                    "english_insight": f"This time-series tracks monthly aggregated performance of {metric.replace('_', ' ')} across recorded dates. Periodic surges indicate demand cycles."
                 },
                 "raw_content": "Offline analytical fallback",
                 "model_used": "heuristic-engine",
                 "error": None
             }
-        elif any(w in q for w in ["payment", "upi", "credit card", "emi", "cod"]):
+
+        # Check for single scalar/aggregation intent
+        if any(w in q for w in ["total", "sum", "average", "avg", "mean", "kitna", "kul"]):
+            agg_func = "mean" if any(w in q for w in ["average", "avg", "mean", "ausat"]) else "sum"
+            if metric:
+                return {
+                    "success": True,
+                    "data": {
+                        "pandas_code": f"df['{metric}'].{agg_func}()",
+                        "chart_type": "none",
+                        "x_col": None,
+                        "y_col": metric,
+                        "english_insight": f"This calculation evaluates the overall {agg_func} of {metric.replace('_', ' ')} across all records. It establishes a baseline benchmark for corporate performance."
+                    },
+                    "raw_content": "Offline analytical fallback",
+                    "model_used": "heuristic-engine",
+                    "error": None
+                }
+
+        # Default: Top 5 by dimension
+        if dim and metric and dim != metric:
             return {
                 "success": True,
                 "data": {
-                    "pandas_code": "df.groupby('payment_method')['revenue'].agg(['count', 'mean']).reset_index().rename(columns={'count': 'transactions', 'mean': 'avg_order_value'}).sort_values(by='transactions', ascending=False)",
+                    "pandas_code": f"df.groupby('{dim}')['{metric}'].sum().nlargest(5).reset_index()",
                     "chart_type": "bar",
-                    "x_col": "payment_method",
-                    "y_col": "avg_order_value",
-                    "english_insight": "This metric highlights transaction volume and average order values across different payment rails. Digital UPI and No-Cost EMI typically unlock higher basket sizes."
+                    "x_col": dim,
+                    "y_col": metric,
+                    "english_insight": f"This analysis aggregates the top 5 {dim.replace('_', ' ')} entities ranked by total {metric.replace('_', ' ')}. Identifying top performers helps focus strategic initiatives."
                 },
                 "raw_content": "Offline analytical fallback",
                 "model_used": "heuristic-engine",
                 "error": None
             }
-        else:
-            return {
-                "success": True,
-                "data": {
-                    "pandas_code": "df.groupby('sub_category')['revenue'].sum().nlargest(8).reset_index()",
-                    "chart_type": "bar",
-                    "x_col": "sub_category",
-                    "y_col": "revenue",
-                    "english_insight": "This analysis surfaces the leading sub-categories by gross sales across the platform. Concentrating stock on top-performing items minimizes inventory holding overhead."
-                },
-                "raw_content": "Offline analytical fallback",
-                "model_used": "heuristic-engine",
-                "error": None
-            }
+
+        # Fallback to head
+        return {
+            "success": True,
+            "data": {
+                "pandas_code": f"df.head(10)",
+                "chart_type": "none",
+                "x_col": None,
+                "y_col": None,
+                "english_insight": "Surfacing a primary sample of records for direct observational inspection across key data attributes."
+            },
+            "raw_content": "Offline analytical fallback",
+            "model_used": "heuristic-engine",
+            "error": None
+        }
 
     # =========================================================================
     # 3. TRANSLATION (Mayura v1)
